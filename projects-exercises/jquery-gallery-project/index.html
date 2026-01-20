@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <link rel="preconnect" href="http://fonts.googleapis.com">
+    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Galeria de Fotos</h1>
+        <button type="button">Nova imagem +</button>
+    </header>
+    <form>
+        <h2>Inserir nova imagem</h2>
+        <input type="url" id="endereco-imagem" required placeholder="URL da imagem">
+        <button type="submit">Adicionar</button>
+        <button type="reset" id="vermelho">Cancelar</button>
+    </form>
+    <ul>
+        <li>
+            <img src="./imagens/Captura de tela 2025-08-16 184531.png" alt="yurinerd">
+            <div class="imagem-link">
+                <a href="./imagens/Captura de tela 2025-08-16 184531.png" target="_blank">
+                    Ver imagem em tamanho real
+                </a>    
+            </div>
+        </li>
+        <li>
+            <img src="./imagens/Foto Guilherme.jpeg" alt="guinerd">
+            <div class="imagem-link">
+                <a href="./imagens/Foto Guilherme.jpeg" target="_blank">
+                    Ver imagem em tamanho real
+                </a>    
+            </div>
+        </li>
+        <li>
+            <img src="./imagens/Foto natal.jpeg" alt="gustavonoel">
+            <div class="imagem-link">
+                <a href="./imagens/Foto natal.jpeg" target="_blank">
+                    Ver imagem em tamanho real
+                </a>    
+            </div>
+        </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="./style.js"></script>
+</body>
+
+</html>

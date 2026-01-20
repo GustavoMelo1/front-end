@@ -1,0 +1,83 @@
+body {
+    display: flex;                  /* Usa flexbox para alinhar elementos */
+    justify-content: center;        /* Centraliza horizontalmente */
+    align-items: flex-start;         /* Alinha elementos no topo */
+    min-height: 100vh;               /* Ocupa altura total da tela */
+    margin: 0;                       /* Remove margens padrão do body */
+}
+
+.container {
+    text-align: center;              /* Centraliza o texto dentro do container */
+    width: 50%;                      /* Ocupa metade da largura da tela */
+}
+
+input, textarea {
+    display: block;                  /* Faz cada elemento ocupar toda a linha */
+    border-radius: 5px;               /* Bordas levemente arredondadas */
+    transition: background-color 1s ease;  /* Transição suave na cor de fundo */
+    transition: color 0.4 ease;       /* Transição suave na cor do texto */
+    width: 100%;                      /* Ocupa toda a largura disponível */
+    box-sizing: border-box;           /* Inclui padding/borda no cálculo da largura */
+    padding: 5px;                     /* Espaço interno */
+    margin-bottom: 10px;              /* Espaço inferior entre elementos */
+}
+
+input:hover, textarea:hover {
+    background-color: rgb(124, 255, 124);  /* Fundo verde claro ao passar o mouse */
+    color: #333;                           /* Texto cinza escuro ao passar o mouse */
+}
+
+button {
+    background-color: rgb(113, 255, 113);  /* Fundo verde claro */
+    border-radius: 5px;                    /* Bordas arredondadas */
+    transition: border-radius 0.5s ease;   /* Transição suave no arredondamento */
+    cursor: pointer;                       /* Cursor de mão ao passar o mouse */
+    padding: 5px;                          /* Espaço interno */
+    font-family: 'trebuchet ms', 'lucida sans unicode', 'lucida grande', 'lucida sans', 'arial', 'sans-serif';  /* Fonte do texto */
+    color: rgba(255,255,255,0.897);         /* Texto branco quase opaco */
+    width: 100%;                           /* Botão ocupa toda a largura */
+    font-size: 20px;                       /* Tamanho do texto grande */
+    transition: color 0.4s;                /* Transição suave na cor do texto */
+}
+
+button:hover {
+    background-color: white;               /* Fundo branco ao passar o mouse */
+    color: black;                           /* Texto preto ao passar o mouse */
+    border-radius: 20px;                    /* Bordas mais arredondadas no hover */
+}
+
+h1, h2 {
+    font-family: 'sans-serif';              /* Fonte sem serifa */
+    cursor: pointer;                        /* Cursor de mão ao passar o mouse */
+    margin: 0;                              /* Remove margens padrão */
+}
+
+h1:hover, h2:hover {
+    color: green;                           /* Muda cor para verde no hover */
+}
+
+textarea {
+    resize: none;                           /* Impede redimensionamento do textarea */
+}
+
+.success-message {
+    background-color: green;                /* Fundo verde */
+    padding: 16px;                          /* Espaço interno */
+    color: white;                           /* Texto branco */
+    display: none;                          /* Oculto por padrão */
+}
+
+.error-message {
+    padding: 8px;                           /* Espaço interno */
+    background-color: red;                  /* Fundo vermelho */
+    color: white;                           /* Texto branco */
+    margin-bottom: 8px;                     /* Espaço inferior */
+    font-size: 12px;                        /* Texto pequeno */
+    display: none;                          /* Oculto por padrão */
+}
+
+input.error {
+    color: red;                             /* Texto vermelho */
+    border-color: red;                      /* Borda vermelha */
+    outline-color: red;                     /* Destaque vermelho ao focar */
+}

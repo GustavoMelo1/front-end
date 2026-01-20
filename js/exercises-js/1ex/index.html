@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario JS</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <form id="formulario" class="formulario">
+            <h1>Grupo A X Grupo B</h1>
+            <h2>Coloque os numeros</h2>
+            <p>Grupo A</p>
+            <input type="number" id="numA" required placeholder="Numero do Grupo A">
+            <p>Grupo B</p>
+            <input type="number" id="numB" required placeholder="Numero do Grupo B">
+            <button type="submit">Enviar</button>
+        </form>
+        <!-- Mensagem de sucesso -->
+        <p class="success-message" style="display:none;">
+            Numero B maior que o A
+        </p>
+        <!-- Mensagem de erro -->
+        <p class="error-message" style="display:none;">
+            Numero B precisa ser maior que A
+        </p>
+    </div>
+    <script src="./main.js"></script>
+</body> 

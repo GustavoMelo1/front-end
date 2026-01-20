@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista telefonica</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Lista de Numeros</h1>
+            <section class="bloco-lista">
+                <form class="form" id="form-contato" autocomplete="off">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" required placeholder="Coloque seu nome completo" />
+
+                    <label for="dd">DDD:</label>
+                    <input type="tel" id="dd" required placeholder="11" inputmode="numeric" maxlength="2" pattern="\d{2}" />
+
+                    <label for="telefone">Número:</label>
+                    <input type="tel" id="telefone" required placeholder="98765-4321" inputmode="numeric" maxlength="9" />
+
+                    <button type="submit">Cadastrar</button>
+                    <p id="erro" style="color:#ff6b6b; margin:6px 0 0; min-height:1em;"></p>
+                </form>
+                <table id="tabela-contatos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:left; border-bottom:1px solid #333; padding:8px 6px;">Nome</th>
+                            <th style="text-align:left; border-bottom:1px solid #333; padding:8px 6px;">Telefone</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

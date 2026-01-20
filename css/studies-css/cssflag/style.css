@@ -1,0 +1,22 @@
+.japao{
+    border-color: black;
+    width: 900px;
+    height: 600px; 
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    border: solid black;
+}
+
+.titulo{
+    font-size: 5rem;
+    text-align: center;
+}
+
+.japao > div > div {
+    border-radius: 50%;
+    background-color:  red;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 175px;
+}

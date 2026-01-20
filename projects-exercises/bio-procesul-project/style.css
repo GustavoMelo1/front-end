@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+@font-face {
+font-family: 'malberg-heavy';
+src: url('./fontes/malberg-trial/MalbergTrial-Heavy.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'malberg-regular';
+src: url('./fontes/malberg-trial/MalbergTrial-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(37, 36, 36);
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgb(255, 10, 10), rgb(95, 3, 3));
+    padding: 16px;
+    width: 100vw;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.849);
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+header > section.cabecalho > h1 {
+    color: white;
+    font-size: 45px;
+    font-family: 'malberg-heavy';
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+}
+
+header > section.bloco-menu {
+    display: flex;
+    
+    width: 100%;
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+    margin-left: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: 'malberg-regular';
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 3px;
+    border-bottom: 1px solid transparent;
+}
+
+.menu a:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.438);
+    transition: .7s;
+}
+
+main {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.itens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section.bloco-mais {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    height: 70px;
+    width: 70px;
+    border: 2px solid rgb(94, 94, 94);
+    border-radius: 4px;
+    background-color: gray;
+    margin: 20px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.411);
+}
+
+section.bloco-mais > a {
+    margin: auto;
+    text-decoration: none;
+    color: black;
+}
+
+section.bloco-mais > a > div.mais {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(37, 36, 36);
+}
+
+section.bloco-predefinicao {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    border-radius: 4px;
+    border: 2px solid rgb(94, 94, 94);
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.411);
+}
+
+footer {
+    background-color: rgb(22, 22, 22);
+    color: white;
+    padding: 16px 0;
+    text-align: center;
+    width: 100%; 
+    font-size: 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0.877);
+}
+
+.rodape {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.rodape .devs {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.rodape .devs a {
+    color: white;
+    text-decoration: underline;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+

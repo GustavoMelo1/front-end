@@ -1,0 +1,16 @@
+img{
+    height: 200px;
+    width: 200px;
+}
+
+.text-vermelho{
+    color: red;
+}
+
+.text-blue{
+    color: blue;
+}
+
+.text-roxo{
+    color: rgb(40, 0, 92);
+}

@@ -1,0 +1,64 @@
+    /* Estilo do body (fundo, centralização e fonte) */
+    body {
+    background-color: rgb(99, 99, 99); /* fundo cinza */
+    margin: 0;
+    display: flex;          /* ativa flexbox */
+    height: 100vh;          /* altura toda da tela */
+    align-items: center;    /* centraliza vertical */
+    justify-content: center;/* centraliza horizontal */
+    font-family: Arial, sans-serif; /* fonte padrão */
+    }
+
+    /* Caixa principal onde fica tudo */
+    .container {
+    background-color: black; /* fundo preto */
+    color: white;            /* texto branco */
+    text-align: center;
+    padding: 30px 40px;      /* espaço interno */
+    border: 2px solid #000;  /* borda preta */
+    border-radius: 12px;     /* cantos arredondados */
+    display: flex;           /* organiza conteúdo em coluna */
+    flex-direction: column;
+    gap: 12px;               /* espaço entre elementos */
+    width: 340px;            /* largura fixa */
+    }
+
+    /* Formulário com os campos empilhados */
+    .form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;         /* espaço entre inputs/botão */
+    margin-top: 12px;  /* espaço do título até o form */
+    }
+
+    /* Inputs e botões com mesmo estilo básico */
+    input, button {
+    padding: 10px;        /* espaço interno */
+    border-radius: 6px;   /* cantos arredondados */
+    border: none;         /* sem borda padrão */
+    font-size: 16px;
+    background-color: white;
+    }
+
+    /* Botão com fundo escuro e texto branco */
+    button {
+    background: rgb(20, 20, 20);
+    cursor: pointer;  /* cursor de "mãozinha" */
+    color: white;
+    }
+
+    /* Quando passa o mouse no botão, escurece */
+    button:hover {
+    background: rgb(0, 0, 0);
+    }
+
+    /* Células da tabela: espaço e linha separadora */
+    #tabela-contatos td {
+    padding: 8px 6px;
+    border-bottom: 1px solid #333;
+    }
+
+    /* Quando passa o mouse em cima da linha da tabela */
+    #tabela-contatos tbody tr:hover {
+    background: #111;
+}

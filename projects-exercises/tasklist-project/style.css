@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(99, 99, 99); /* fundo cinza */
+    margin: 0;
+    display: flex;          /* ativa flexbox */
+    height: 100vh;          /* altura toda da tela */
+    align-items: center;    /* centraliza vertical */
+    justify-content: center;/* centraliza horizontal */
+    font-family: Arial, sans-serif; /* fonte padrão */
+}
+
+.container{
+    width: min(600px, 90vw);
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;         /* espaço entre inputs/botão */
+    margin-top: 12px;  /* espaço do título até o form */
+}
+
+/* Inputs e botões com mesmo estilo básico */
+input, button {
+    padding: 10px;        /* espaço interno */
+    border-radius: 6px;   /* cantos arredondados */
+    border: none;         /* sem borda padrão */
+    font-size: 16px;
+    background-color: white;
+}
+
+button:hover{
+    background-color: rgb(185, 185, 185);;
+}
+
+button{
+    color:  white;
+    background-color: #2d7d2f;
+}
+
+h2{
+    color: rgb(0, 0, 0);
+}
+
+#lista-tarefas li.concluida {
+    text-decoration: line-through;
+    color: #777;
+}
