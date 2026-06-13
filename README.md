@@ -5,6 +5,7 @@ This is NOT my field , so this repo is pure chaos and I'll probably never update
 
 ## Structure
 
+```text
 front-end/
 ├── css/studies-css/          
 ├── html/
@@ -21,5 +22,5 @@ front-end/
 ├── jquery-gallery-project/
 ├── form-project/
 └── bio-procesul-project/ 
-
+```
 Abandoned with love.
